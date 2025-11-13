@@ -29,6 +29,7 @@ public class SimpleClient {
         FileOperator file = new FileOperator("client.txt");
         while (true){
             String message = file.readline();
+            a.sendMessage(message);
             if (message.equals("exit")){
                 break;
             }
